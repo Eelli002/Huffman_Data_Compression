@@ -1,0 +1,3 @@
+/class/classes/eelli002/final-project-scrumlins/src/IO_Test/CMakeFiles/rebuild_cache.dir
+/class/classes/eelli002/final-project-scrumlins/src/IO_Test/CMakeFiles/Huffman.dir
+/class/classes/eelli002/final-project-scrumlins/src/IO_Test/CMakeFiles/edit_cache.dir

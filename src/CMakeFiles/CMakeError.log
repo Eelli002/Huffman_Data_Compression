@@ -1,0 +1,120 @@
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /class/classes/kwhol002/final-project-scrumlins/src/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_d4d3a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d4d3a.dir/build.make CMakeFiles/cmTC_d4d3a.dir/build
+gmake[1]: Entering directory '/class/classes/kwhol002/final-project-scrumlins/src/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d4d3a.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_d4d3a.dir/src.c.o -c /class/classes/kwhol002/final-project-scrumlins/src/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_d4d3a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d4d3a.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_d4d3a.dir/src.c.o -o cmTC_d4d3a 
+CMakeFiles/cmTC_d4d3a.dir/src.c.o: In function `main':
+src.c:(.text+0x2d): undefined reference to `pthread_create'
+src.c:(.text+0x39): undefined reference to `pthread_detach'
+src.c:(.text+0x45): undefined reference to `pthread_cancel'
+src.c:(.text+0x56): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_d4d3a.dir/build.make:99: cmTC_d4d3a] Error 1
+gmake[1]: Leaving directory '/class/classes/kwhol002/final-project-scrumlins/src/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_d4d3a/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /class/classes/kwhol002/final-project-scrumlins/src/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_4f853/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_4f853.dir/build.make CMakeFiles/cmTC_4f853.dir/build
+gmake[1]: Entering directory '/class/classes/kwhol002/final-project-scrumlins/src/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4f853.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_4f853.dir/CheckFunctionExists.c.o -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_4f853
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4f853.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_4f853.dir/CheckFunctionExists.c.o -o cmTC_4f853  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_4f853.dir/build.make:99: cmTC_4f853] Error 1
+gmake[1]: Leaving directory '/class/classes/kwhol002/final-project-scrumlins/src/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_4f853/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /class/classes/eelli002/final-project-scrumlins/src/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_7115f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_7115f.dir/build.make CMakeFiles/cmTC_7115f.dir/build
+gmake[1]: Entering directory '/class/classes/eelli002/final-project-scrumlins/src/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7115f.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_7115f.dir/src.c.o -c /class/classes/eelli002/final-project-scrumlins/src/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_7115f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7115f.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_7115f.dir/src.c.o -o cmTC_7115f 
+CMakeFiles/cmTC_7115f.dir/src.c.o: In function `main':
+src.c:(.text+0x2d): undefined reference to `pthread_create'
+src.c:(.text+0x39): undefined reference to `pthread_detach'
+src.c:(.text+0x45): undefined reference to `pthread_cancel'
+src.c:(.text+0x56): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_7115f.dir/build.make:99: cmTC_7115f] Error 1
+gmake[1]: Leaving directory '/class/classes/eelli002/final-project-scrumlins/src/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_7115f/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /class/classes/eelli002/final-project-scrumlins/src/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_741eb/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_741eb.dir/build.make CMakeFiles/cmTC_741eb.dir/build
+gmake[1]: Entering directory '/class/classes/eelli002/final-project-scrumlins/src/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_741eb.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_741eb.dir/CheckFunctionExists.c.o -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_741eb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_741eb.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_741eb.dir/CheckFunctionExists.c.o -o cmTC_741eb  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_741eb.dir/build.make:99: cmTC_741eb] Error 1
+gmake[1]: Leaving directory '/class/classes/eelli002/final-project-scrumlins/src/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_741eb/fast] Error 2
+
+
+

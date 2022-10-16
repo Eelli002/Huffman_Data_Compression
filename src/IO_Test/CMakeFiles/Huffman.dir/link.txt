@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/Huffman.dir/main.cpp.o CMakeFiles/Huffman.dir/huffman/binary_in.cpp.o CMakeFiles/Huffman.dir/huffman/binary_out.cpp.o CMakeFiles/Huffman.dir/huffman/huffman.cpp.o -o Huffman 
