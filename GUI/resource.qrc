@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/rec">
+        <file>Icons/encrypticon.png</file>
+        <file>Icons/newicon.png</file>
+        <file>Icons/openicon.png</file>
+        <file>Icons/redoicon.png</file>
+        <file>Icons/saveasicon.png</file>
+        <file>Icons/saveicon.png</file>
+        <file>Icons/undoicon.png</file>
+    </qresource>
+</RCC>
